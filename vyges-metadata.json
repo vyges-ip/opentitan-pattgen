@@ -6,6 +6,8 @@
     "type": "git",
     "url": "https://github.com/lowRISC/opentitan",
     "commit": "304378684dfcf5be73bbd14faffa71790793d8c6",
+    "ip_path": "hw/ip/pattgen",
+    "private": false,
     "rtl_path": "rtl",
     "rtl_files": [
       "rtl/pattgen.sv",
@@ -16,5 +18,48 @@
       "rtl/pattgen_reg_top.sv"
     ]
   },
-  "updated": "2026-02-19T06:03:45Z"
+  "updated": "2026-02-19T06:12:02Z",
+  "$schema": "https://vyges.com/schema/v1/vyges-metadata.schema.json",
+  "x-version": "1.0.0",
+  "description": "Pattgen. OpenTitan IP block from hw/ip/pattgen.",
+  "template": "opentitan-ip-template@1.0.0",
+  "target": [
+    "fpga",
+    "asic"
+  ],
+  "design_type": [
+    "digital"
+  ],
+  "maturity": "imported",
+  "created": "2026-02-19T06:12:02Z",
+  "interfaces": [
+    {
+      "type": "bus",
+      "direction": "input",
+      "protocol": "TL-UL",
+      "width": 32,
+      "description": "TL-UL host interface for register access"
+    },
+    {
+      "type": "bus",
+      "direction": "output",
+      "protocol": "Pattern",
+      "description": "Test pattern generator output"
+    }
+  ],
+  "categories": {
+    "primary": "test",
+    "secondary": [
+      "pattern-generator"
+    ],
+    "tags": [
+      "pattern-generator",
+      "opentitan",
+      "lowrisc-opentitan"
+    ]
+  },
+  "community": {
+    "issues": "https://github.com/vyges-ip/opentitan-pattgen/issues",
+    "contributions": "https://github.com/vyges-ip/opentitan-pattgen/pulls"
+  }
 }
