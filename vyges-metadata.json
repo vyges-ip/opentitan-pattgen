@@ -5,6 +5,16 @@
   "source": {
     "type": "git",
     "url": "https://github.com/lowRISC/opentitan",
-    "commit": "304378684dfcf5be73bbd14faffa71790793d8c6"
-  }
+    "commit": "304378684dfcf5be73bbd14faffa71790793d8c6",
+    "rtl_path": "rtl",
+    "rtl_files": [
+      "rtl/pattgen.sv",
+      "rtl/pattgen_chan.sv",
+      "rtl/pattgen_core.sv",
+      "rtl/pattgen_ctrl_pkg.sv",
+      "rtl/pattgen_reg_pkg.sv",
+      "rtl/pattgen_reg_top.sv"
+    ]
+  },
+  "updated": "2026-02-19T06:03:45Z"
 }
